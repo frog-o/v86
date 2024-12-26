@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>v86</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Run KolibriOS, Linux or Windows 98 in your browser">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+    <link rel="stylesheet" href="v86.css">
+<link rel="shortcut icon" href="./favorite.png">
+
+   <script type="importmap">
+        {
+            "imports": {
+      
+            }
+        }
+    </script> 
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.10.1/dist/es-module-shims.js"></script>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/eruda/3.4.1/eruda.min.js"></script>
+<script>eruda.init();</script>
+
+    <script type="mpy" src="./main.py" config="./pyscript.json"></script>
+    <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+     <script type="module"  src='main64bit.js' defer></script>
+    <script type="text/babel" data-type="module" src='simpleServer .js' defer></script>
+    <script nomodule>
+        console.log("warning esm module not supported in your browser");
+    </script>
+</head>
+<body>
+    <div>
+        This is my attempt to create a 64 bit version with no build step.
+        <p></p>
+        <ul>
+            <li><a href="https://github.com/xarantolus/ax">ax</a></li>
+            <li><a href="https://browsix.org">browsix</a></li>
+            <li><a href="https://wasmlinux-demo.pages.dev/">wasmlinux</a></li>
+            <li><a href="https://github.com/zen-fs/core">zen-fs</a></li>
+            <li><a href="https://www.slitaz.org/en/">Slitaz Linux Iso</a></li>
+            <li><a href="https://www.jsdelivr.com">jsdelivr</a></li>
+        </ul>
+    </div>
+</body>
+</html>
